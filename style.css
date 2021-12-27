@@ -15,7 +15,7 @@ html {
   --nav: calc(1rem + 0.5vw);
   --price: calc(3.2rem + 1vw);
   --mini-tittle: calc(1rem + 0.5vw);
-  --main-color: #3fcac2;
+  --main-color: #00b4d8;
   --text-color: #585252;
   --white-text: #f6f4f4;
 }
@@ -125,7 +125,7 @@ a {
 
 /*NAV + HEROO*/
 header {
-  background: linear-gradient(0.7turn, #3fcac2, #197772);
+  background: linear-gradient(0.7turn, #00b4d8, #0077b6);
   background-repeat: no-repeat;
 }
 .nav-links {
@@ -137,6 +137,7 @@ header {
 }
 
 .nav-link a {
+  text-transform: uppercase;
   color: var(--white-text);
   font-size: var(--nav);
 }
@@ -165,12 +166,19 @@ header {
 .hero-text h2 {
   font-size: var(--header2);
   color: var(--white-text);
+  text-transform: uppercase;
 }
 
 .hero-text p {
-  font-size: var(--text);
   color: var(--white-text);
   margin-top: 2rem;
+}
+.hero-subtext {
+  font-size: 3.4rem;
+}
+.hero-subtext-2 {
+  padding: 1rem 0;
+  font-size: var(--text);
 }
 
 .hero-text a {
@@ -188,6 +196,9 @@ header {
 .hero-text a:hover {
   background: transparent;
   border: 2px solid white;
+}
+.hero-text a:active {
+  transform: scale(0.9);
 }
 
 header > img {
@@ -861,6 +872,7 @@ footer p {
     flex-direction: column;
   }
   .hero-img {
+    width: 60%;
     z-index: 5;
   }
   .hero-text {
