@@ -6,7 +6,7 @@
 
 html {
   font-size: 62.5%;
-  --header1: calc(1.2rem + 1vw);
+  --header1: calc(1.6rem + 1vw);
   --header2: calc(4rem + 0.5vw);
   --header3: calc(2.2rem + 0.5vw);
   --header4: calc(0.7rem + 1vw);
@@ -210,8 +210,10 @@ header > img {
 /* SECTION "LO QUE HACEMOS"*/
 
 .info {
-  min-height: 100vh;
+  min-height: 70vh;
   position: relative;
+  z-index: 100;
+  overflow-x: hidden;
 }
 
 .desc {
@@ -283,11 +285,13 @@ header > img {
   text-align: center;
 }
 
-.info > img {
+.info > svg {
   position: absolute;
-  top: 7rem;
-  right: 0;
-  height: 80vh;
+  opacity: 0.5;
+  top: 0;
+  right: -20rem;
+  height: 60vh;
+  z-index: -100;
 }
 
 /*SECTION DESCRIPCION (CERDO)*/
@@ -303,8 +307,10 @@ header > img {
 
 .wrapper {
   width: 90%;
-  margin: auto;
+  margin: 0 auto;
   display: flex;
+  align-items: center;
+  gap: 4rem;
   flex-wrap: wrap;
 }
 
@@ -315,8 +321,12 @@ header > img {
 
 .descripcion-text {
   text-align: center;
-
   flex: 1 1 40rem;
+  min-height: 20vh;
+  overflow: hidden;
+  background-color: rgba(0, 180, 216, 0.2);
+  border-radius: 12px;
+  padding: 4rem 0;
 }
 
 .descripcion-precio {
@@ -450,7 +460,7 @@ header > img {
 /*PRECIOSSSSS*/
 .prices {
   min-height: 100vh;
-  background: linear-gradient(0.7turn, #3fcac2, #197772);
+  background: linear-gradient(0.7turn, #00b4d8, #0077b6);
   background-repeat: no-repeat;
   position: relative;
   overflow-x: hidden;
@@ -726,7 +736,7 @@ header > img {
 /*FOOOTERRR*/
 .footer {
   min-height: 30vh;
-  background: linear-gradient(0.9turn, #3fcac2, #197772);
+  background: linear-gradient(0.7turn, #00b4d8, #0077b6);
   display: flex;
   justify-content: space-around;
   align-items: flex-start;
