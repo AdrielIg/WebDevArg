@@ -322,8 +322,7 @@ header > img {
 .descripcion-text {
   text-align: center;
   flex: 1 1 40rem;
-  min-height: 20vh;
-  overflow: hidden;
+
   background-color: rgba(0, 180, 216, 0.2);
   border-radius: 12px;
   padding: 4rem 0;
