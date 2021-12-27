@@ -54,7 +54,7 @@ h1 {
   text-transform: uppercase;
   letter-spacing: 0.2rem;
   font-size: var(--header1);
-  -webkit-text-stroke: 0.1rem white;
+  -webkit-text-stroke: 0.14rem white;
   margin-left: 2rem;
 }
 ul {
@@ -325,7 +325,7 @@ header > img {
 
   background-color: rgba(0, 180, 216, 0.2);
   border-radius: 12px;
-  padding: 4rem 0;
+  padding: 4rem 2rem;
 }
 
 .descripcion-precio {
@@ -351,27 +351,31 @@ header > img {
   display: flex;
   margin-top: 5rem;
   text-align: center;
+  justify-content: center;
 }
 
 .tarjetas {
   margin-top: 2rem;
   text-align: left;
   margin-left: 4rem;
+  display: flex;
 }
-
+.card-wrapper {
+  padding: 0 1rem;
+}
+.icon-wrapper {
+  padding: 0.5rem 0;
+  font-size: var(--mini-tittle);
+}
 .fa-check {
   color: var(--main-color);
 }
 
 .tarjetas h4 {
-  display: inline-block;
   font-size: var(--mini-tittle);
-  margin-left: 1rem;
 }
 
 .tarjetas p {
-  margin-left: 2.2rem;
-  margin-top: 0.3rem;
   font-size: var(--mini-tittle);
   font-weight: 200;
 }
@@ -905,10 +909,6 @@ footer p {
     height: 50vh;
     flex: 1 1 40rem;
   }
-
-  .caracteristicas {
-    justify-content: center;
-  }
 }
 
 .hide {
@@ -1051,6 +1051,8 @@ footer p {
     justify-content: center;
     align-items: center;
     margin-bottom: 2rem;
+  }
+  .caracteristicas-2 {
   }
 
   .tarjetas {
