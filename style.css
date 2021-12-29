@@ -16,6 +16,7 @@ html {
   --price: calc(3.2rem + 1vw);
   --mini-tittle: calc(1rem + 0.5vw);
   --main-color: #00b4d8;
+  --secondary-color: #0077b6;
   --text-color: #585252;
   --white-text: #f6f4f4;
 }
@@ -647,10 +648,7 @@ header > img {
   bottom: 0;
   height: 70%;
   background: var(--main-color);
-
   z-index: -1;
-  /*box-shadow: inset 0 0 50px rgba(0, 0, 0, 0.5);
-  */
   transition: 0.5s;
 }
 .liquid:before,
@@ -677,12 +675,12 @@ header > img {
 }
 .precio-estandar {
   background: #292b2b;
-  border: 2px solid #03948d;
+  border: 2px solid var(--secondary-color);
 
   border-bottom: none;
   box-shadow: 0px 10px 10px rgba(0, 0, 0, 0.3), 0px 20px 20px rgba(0, 0, 0, 0.1);
   text-align: left;
-  background: #03948d;
+  background: var(--secondary-color);
   flex: 0 1 10rem;
   min-height: 55rem;
   width: 15rem;
@@ -701,8 +699,8 @@ header > img {
   text-align: center;
   margin-top: 2rem;
   color: var(--main-color);
-  border-top: 3px solid #03948d;
-  border-bottom: 3px solid #03948d;
+  border-top: 3px solid var(--secondary-color);
+  border-bottom: 3px solid var(--secondary-color);
 }
 
 .mes-estandar {
@@ -730,10 +728,12 @@ header > img {
   margin-top: 3.2rem;
 }
 
-.precio-contacto-estandar {
+.precio-contacto-estandar,
+.precio-contacto {
   display: flex;
   justify-content: center;
-  margin-top: 2rem;
+  margin-top: 5rem;
+  margin-bottom: 3rem;
 }
 .precio-contacto-estandar a {
   color: var(--text-color);
@@ -750,7 +750,7 @@ header > img {
   width: 100%;
   bottom: 0;
   height: 70%;
-  background: #03948d;
+  background: var(--secondary-color);
 
   z-index: -1;
   /*box-shadow: inset 0 0 50px rgba(0, 0, 0, 0.5);
@@ -779,11 +779,6 @@ header > img {
   border-radius: 40%;
   animation: wave 4s infinite linear;
 }
-
-.precio:hover .liquid:before,
-.precio:hover .liquid:after {
-}
-
 .datos-premium {
   text-align: center;
   margin-top: 2rem;
@@ -791,7 +786,7 @@ header > img {
 .unico-pago {
   text-align: center;
   font-size: var(--header2);
-  color: rgba(87, 136, 228, 0.849);
+  color: var(--secondary-color);
   margin-top: 2rem;
 }
 .premium {
@@ -800,7 +795,7 @@ header > img {
 .valor-premium {
   font-size: var(--header1);
   margin-top: 1rem;
-  color: rgba(87, 136, 228, 0.849);
+  color: var(--secondary-color);
 }
 
 .pack-premium {
